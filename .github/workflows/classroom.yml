@@ -13,14 +13,14 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: test3-test
+    - name: test3
       id: test3
       uses: classroom-resources/autograding-python-grader@v1
       with:
         timeout: 10
         max-score: 10
         setup-command: ''
-    - name: test4-test
+    - name: test4
       id: test4
       uses: classroom-resources/autograding-python-grader@v1
       with:
