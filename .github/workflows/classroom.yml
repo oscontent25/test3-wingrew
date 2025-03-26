@@ -21,7 +21,7 @@ jobs:
         max-score: 10
         setup-command: ''
     - name: Autograding Reporter
-      uses: classroom-resources/autograding-grading-reporter@v1
+      uses: oscontent25/autograding-grading-reporter@v1
       env:
         TEST3-TEST_RESULTS: "${{steps.test3-test.outputs.result}}"
       with:
