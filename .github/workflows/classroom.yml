@@ -30,7 +30,7 @@ jobs:
     - name: Autograding Reporter
       uses: oscontent25/autograding-grading-reporter@v1
       env:
-        TEST3_RESULTS: "${{steps.test3.outputs.result}}"
-        TEST4_RESULTS: "${{steps.test4.outputs.result}}"
+        TEST3-TEST_RESULTS: "${{steps.test3.outputs.result}}"
+        TEST4-TEST_RESULTS: "${{steps.test4.outputs.result}}"
       with:
         runners: test3-test,test4-test
