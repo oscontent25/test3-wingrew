@@ -18,14 +18,14 @@ jobs:
       uses: classroom-resources/autograding-python-grader@v1
       with:
         timeout: 10
-        max-score: 10
+        max-score: 20
         setup-command: ''
     - name: test4
       id: test4
       uses: classroom-resources/autograding-python-grader@v1
       with:
         timeout: 10
-        max-score: 10
+        max-score: 20
         setup-command: ''
     - name: Autograding Reporter
       uses: oscontent25/autograding-grading-reporter@v1
