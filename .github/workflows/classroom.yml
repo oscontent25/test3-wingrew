@@ -14,14 +14,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: test3
-      id: test3
+      id: test3-test
       uses: classroom-resources/autograding-python-grader@v1
       with:
         timeout: 10
         max-score: 20
         setup-command: ''
     - name: test4
-      id: test4
+      id: test4-test
       uses: classroom-resources/autograding-python-grader@v1
       with:
         timeout: 10
@@ -33,4 +33,4 @@ jobs:
         TEST3_RESULTS: "${{steps.test3.outputs.result}}"
         TEST4_RESULTS: "${{steps.test4.outputs.result}}"
       with:
-        runners: test3,test4
+        runners: test3-test,test4-test
